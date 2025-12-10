@@ -6,3 +6,8 @@ printf("Enter any numbers");
 scanf("%d",&a);
 if(a>=0)
 {
+printf("Enter number is positive");
+}
+printf("Number is testing");
+return 0;
+}
