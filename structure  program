@@ -1,0 +1,17 @@
+#include <stdio.h>
+struct book
+{
+char title[50];
+char author[50];
+int page;
+float cost;
+};
+int main()
+{
+struct book ab = {"C Program", "Ashok", 240, 500.0};
+printf("Title: %s\n", ab.title);
+printf("Author: %s\n", ab.author);
+printf("Pages: %d\n", ab.page);
+printf("Cost: %.2f\n", ab.cost);
+return 0;
+}
