@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+struct employed
+{
+char name[50];
+int id;
+float salary;
+};
+struct employed ab = {"Mouni", 3, 50000.00};
+struct employed *ptr;
+ptr = &ab;
+printf("Name: %s\n", ptr->name);
+printf("ID: %d\n", ptr->id);
+printf("Salary: %.2f\n", ptr->salary);
+return 0;
+}
