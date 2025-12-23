@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+int x;
+int *ptr;
+x = 15;     
+ptr = &x;  
+printf("Value of x = %d\n", x);
+printf("Address of x = %p\n", (void*)&x);
+printf("Value of ptr (address stored) = %p\n", (void*)ptr);
+printf("Value pointed by ptr = %d\n", *ptr);
+printf("Address of ptr itself = %p\n", (void*)&ptr);
+return 0;
+}
