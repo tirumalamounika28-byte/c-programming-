@@ -1,0 +1,13 @@
+#include <stdio.h>
+int a = 60;   
+void display()
+{
+printf("Global variable = %d\n", a);
+}
+int main()
+{
+int a = 30;   
+printf("Local variable = %d\n", a);
+display();
+return 0;
+}
