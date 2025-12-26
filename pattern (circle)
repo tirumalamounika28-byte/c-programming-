@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int i, j, r;
+    printf("Enter radius of the circle: ");
+    scanf("%d", &r);
+for(i = 0; i <= 2*r; i++) {
+        for(j = 0; j <= 2*r; j++) {
+            double distance = sqrt((i - r)*(i - r) + (j - r)*(j - r));
+            if(distance > r - 0.5 && distance < r + 0.5)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
