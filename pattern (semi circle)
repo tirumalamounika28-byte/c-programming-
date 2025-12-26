@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int r, i, j;
+printf("Enter radius of semicircle: ");
+  scanf("%d", &r);
+ for(i = 0; i <= r; i++) {
+        for(j = 0; j <= 2*r; j++) {
+            // Circle equation (x - r)^2 + (y - r)^2 = r^2
+            double distance = sqrt((i - r)*(i - r) + (j - r)*(j - r));
+            if(distance > r - 0.5 && distance < r + 0.5)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+ return 0;
+}
