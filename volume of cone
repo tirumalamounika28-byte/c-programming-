@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    float radius, height, volume;
+    const float pi = 3.14159;
+    printf("Enter radius of the cone: ");
+    scanf("%f", &radius);
+    printf("Enter height of the cone: ");
+    scanf("%f", &height);
+    volume = (pi * radius * radius * height) / 3;
+    printf("Volume of the cone = %.2f\n", volume);
+return 0;
+}
