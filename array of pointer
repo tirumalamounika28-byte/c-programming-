@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    const char *fruits[] = {"Apple", "Banana", "Cherry", "Mango"};
+    int n = 4;
+printf("List of fruits:\n");
+    for(int i = 0; i < n; i++) {
+        printf("%s\n", fruits[i]);
+    }
+ return 0;
+}
