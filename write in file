@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    FILE *fptr;
+    char text[100];
+    fptr = fopen("output.txt", "w");
+    if(fptr == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+    printf("Enter some text to write to the file: ");
+    fgets(text, sizeof(text), stdin);
+    fprintf(fptr, "%s", text);
+    fclose(fptr);
+    printf("Text written to file successfully!\n");
+    return 0;
+}
